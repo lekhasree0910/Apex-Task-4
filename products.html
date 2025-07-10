@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Our Products</h1>
+
+        <div class="controls">
+            <div class="filter-options">
+                <h3>Filter by Category:</h3>
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="electronics">Electronics</button>
+                <button class="filter-btn" data-category="books">Books</button>
+                <button class="filter-btn" data-category="clothing">Clothing</button>
+            </div>
+
+            <div class="sort-options">
+                <h3>Sort by:</h3>
+                <select id="sortSelect">
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="name-asc">Name: A-Z</option>
+                    <option value="name-desc">Name: Z-A</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="productList" class="product-grid">
+            </div>
+
+        <p id="noProductsFound" class="no-results-message" style="display: none;">No products found matching your criteria.</p>
+    </div>
+
+    <script src="products.js"></script>
+</body>
+</html>
